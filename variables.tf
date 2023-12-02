@@ -1,24 +1,39 @@
-variable "production_folder_name" {
+variable "production_ou_id" {
   type        = string
-  description = "The name of the production folder"
+  description = "The ID of the production OU"
 }
 
-variable "nonproduction_folder_name" {
+variable "preproduction_ou_id" {
   type        = string
-  description = "The name of the nonproduction folder"
+  description = "The ID of the preproduction OU"
 }
 
-variable "development_folder_name" {
+variable "development_ou_id" {
   type        = string
-  description = "The name of the development folder"
-}
-
-variable "project_prefix" {
-  type        = string
-  description = "Used to prefix the project names to ensure global uniqueness"
+  description = "The ID of the development OU"
 }
 
 variable "team_name" {
   type        = string
-  description = "The name of the team onboarded"
+  description = "The name of the team to be onboarded"
+}
+
+variable "production_account_email" {
+  type        = string
+  description = "The production root account email"
+}
+
+variable "preproduction_account_email" {
+  type        = string
+  description = "The preproduction root account email"
+}
+
+variable "development_account_email" {
+  type        = string
+  description = "The development root account email"
+}
+
+variable "shared_account_email" {
+  type        = string
+  description = "The shared root account email"
 }
